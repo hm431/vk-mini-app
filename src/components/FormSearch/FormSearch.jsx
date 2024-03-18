@@ -16,7 +16,7 @@ function FormSearch() {
 
         var isValid = /^[a-zA-Zа-яА-Я]+$/.test(e.target.value);
         if (isValid && (e.target.value !== lastReq)) {
-            setTimeout(() => { // TODO повторение кода, возможно надо убрать + надо убрать 
+            setTimeout(() => { 
                 changeApiAge(e.target.value);
             }, 3000)
         }
